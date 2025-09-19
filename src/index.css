@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* 🎨 Custom DaisyUI Theme */
+@plugin "daisyui/theme" {
+  name: "NFT";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+
+  /* Backgrounds */
+  --color-base-100: #151621; /* deeper dark */
+  --color-base-200: #0E0F14; /* top background */
+  --color-base-300: #323237; /* graphite depth */
+  /* --color-other: #323237;  */
+  --color-base-content: #FFFFFF;
+
+  /* Brand palette */
+  --color-primary: #4A2CF5; /* Cyber Indigo */
+  --color-primary-content: #ffffff;
+
+  --color-secondary: #20F7A7; /* Mint Green */
+  --color-secondary-content: #000000;
+
+  /* Accents */
+  --color-accent: #C7B8FF; /* Soft Lavender */
+  --color-accent-content: #18181B;
+
+  /* Optional Premium Gold */
+  --color-warning: #FFD86B;
+  --color-warning-content: #18181B;
+
+  /* Feedback */
+  --color-success: #20F7A7; /* Mint for success */
+  --color-error: #FF4D4F;   /* Error red */
+  --color-info: #4A2CF5;    /* Indigo as info */
+
+  /* Radius + sizing */
+  --radius-selector: 2rem;
+  --radius-field: 2rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
