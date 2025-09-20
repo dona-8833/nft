@@ -1,13 +1,24 @@
 import React from "react";
 import { PiStarFourBold } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 function Reasson() {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
   return (
     <div className="w-full relative pb-10">
       <div className="flex items-center w-full md:gap-20 gap-5 flex-col-reverse md:flex-row justify-center">
         {/* Text Section */}
-        <div>
-          <h1 className="text-2xl  md:text-4xl text-center md:text-left font-bold">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeUp}
+        >
+          <h1 className="text-2xl md:text-4xl text-center md:text-left font-bold">
             <svg
               width="162"
               height="22"
@@ -28,40 +39,48 @@ function Reasson() {
               Mintellect?
             </span>
           </h1>
-        </div>
+        </motion.div>
 
         {/* Image Section */}
-        <div className="h-[420px] w-full md:w-[800px] overflow-hidden rounded-4xl flex items-center justify-center">
-          <img src="/jelly.png" alt="NFT Jelly" className=" h-full w-full" />
-        </div>
+        <motion.div
+          className="h-[420px] w-full md:w-[800px] overflow-hidden rounded-4xl flex items-center justify-center"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.8 } }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <img src="/jelly.png" alt="NFT Jelly" className="h-full w-full" />
+        </motion.div>
       </div>
-      <PiStarFourBold className="text-white text-2xl md:absolute top-0" />
-      <PiStarFourBold className="text-white text-2xl md:absolute md:top-90 top-150 right-0 absolute md:left-50" />
-      <div className="flex flex-col md:flex-row  gap-3 w-full py-9 items-center justify-between">
-        <div className="flex relative flex-col items-center justify-center text-center  max-w-xl ">
-          <svg
-            className="absolute -top-6 md:-left-5 left-0  w-10 h-10 "
-            viewBox="0 0 34 37"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M11.3759 34.5281C8.12942 33.6231 4.73044 33.1666 1.4332 32.7484C0.723028 32.6608 0.0636796 33.15 0.0129529 33.8393C-0.0885005 34.5291 0.419064 35.1599 1.07851 35.2476C4.27429 35.6502 7.57123 36.081 10.6656 36.9521C11.325 37.1411 12.0355 36.7521 12.2384 36.083C12.4413 35.4144 12.0354 34.7175 11.3759 34.5281Z"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M21.2164 21.6992C15.9915 16.4031 10.1072 11.7888 4.98385 6.35065C4.52731 5.84277 3.71568 5.81556 3.20841 6.28969C2.70115 6.76432 2.65062 7.56243 3.15789 8.07032C8.28128 13.5241 14.1656 18.1535 19.3904 23.4652C19.8977 23.961 20.7091 23.968 21.2164 23.4803C21.6729 22.9931 21.7237 22.195 21.2164 21.6992Z"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M31.0076 1.32805C31.1598 4.35925 31.3117 7.39046 31.4638 10.4222C31.4638 11.1165 32.0729 11.6526 32.783 11.6188C33.4932 11.5846 34.0002 10.9935 34.0002 10.2987C33.848 7.26248 33.6961 4.22674 33.5439 1.191C33.4932 0.496681 32.8844 -0.0358964 32.1742 0.00189291C31.5148 0.0396822 30.9569 0.634236 31.0076 1.32805Z"
-            />
-          </svg>
 
+      {/* Stars */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
+        className="md:absolute top-0 left-5"
+      >
+        <PiStarFourBold className="text-white text-2xl" />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
+        className="md:absolute md:top-[90px] top-[150px] right-0 md:left-[50px]"
+      >
+        <PiStarFourBold className="text-white text-2xl" />
+      </motion.div>
+
+      {/* Bottom Features */}
+      <div className="flex flex-col md:flex-row gap-3 w-full py-9 items-center justify-between">
+        {/* Feature 1 */}
+        <motion.div
+          className="flex relative flex-col items-center justify-center text-center max-w-xl"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeUp}
+          transition={{ delay: 0 }}
+        >
+          {/* SVG stays the same */}
           <h1 className="text-2xl md:text-3xl font-extrabold text-secondary mb-4">
             Learn to Own
           </h1>
@@ -69,31 +88,17 @@ function Reasson() {
             Mintellect makes NFT ownership <br /> educational with gamified
             learning <br /> and quizzes tied to real rewards.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="flex relative flex-col items-center justify-center text-center  max-w-xl ">
-          <svg
-            className="absolute -top-6 md:-left-5 -left-6  w-10 h-10 "
-            viewBox="0 0 34 37"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M11.3759 34.5281C8.12942 33.6231 4.73044 33.1666 1.4332 32.7484C0.723028 32.6608 0.0636796 33.15 0.0129529 33.8393C-0.0885005 34.5291 0.419064 35.1599 1.07851 35.2476C4.27429 35.6502 7.57123 36.081 10.6656 36.9521C11.325 37.1411 12.0355 36.7521 12.2384 36.083C12.4413 35.4144 12.0354 34.7175 11.3759 34.5281Z"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M21.2164 21.6992C15.9915 16.4031 10.1072 11.7888 4.98385 6.35065C4.52731 5.84277 3.71568 5.81556 3.20841 6.28969C2.70115 6.76432 2.65062 7.56243 3.15789 8.07032C8.28128 13.5241 14.1656 18.1535 19.3904 23.4652C19.8977 23.961 20.7091 23.968 21.2164 23.4803C21.6729 22.9931 21.7237 22.195 21.2164 21.6992Z"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M31.0076 1.32805C31.1598 4.35925 31.3117 7.39046 31.4638 10.4222C31.4638 11.1165 32.0729 11.6526 32.783 11.6188C33.4932 11.5846 34.0002 10.9935 34.0002 10.2987C33.848 7.26248 33.6961 4.22674 33.5439 1.191C33.4932 0.496681 32.8844 -0.0358964 32.1742 0.00189291C31.5148 0.0396822 30.9569 0.634236 31.0076 1.32805Z"
-            />
-          </svg>
+        {/* Feature 2 */}
+        <motion.div
+          className="flex relative flex-col items-center justify-center text-center max-w-xl"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeUp}
+          transition={{ delay: 0.2 }}
+        >
           <h1 className="text-2xl md:text-3xl font-extrabold text-secondary mb-4">
             Knowledge-Backed NFTs
           </h1>
@@ -101,38 +106,25 @@ function Reasson() {
             Get access to limited-edition <br /> collections designed to combine
             art, <br /> knowledge, and utility.
           </p>
-        </div>
-        <div className="flex flex-col relative items-center justify-center text-center  max-w-xl ">
-          <svg
-            className="absolute -top-6 md:-left-5 -left-5  w-10 h-10 "
-            viewBox="0 0 34 37"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M11.3759 34.5281C8.12942 33.6231 4.73044 33.1666 1.4332 32.7484C0.723028 32.6608 0.0636796 33.15 0.0129529 33.8393C-0.0885005 34.5291 0.419064 35.1599 1.07851 35.2476C4.27429 35.6502 7.57123 36.081 10.6656 36.9521C11.325 37.1411 12.0355 36.7521 12.2384 36.083C12.4413 35.4144 12.0354 34.7175 11.3759 34.5281Z"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M21.2164 21.6992C15.9915 16.4031 10.1072 11.7888 4.98385 6.35065C4.52731 5.84277 3.71568 5.81556 3.20841 6.28969C2.70115 6.76432 2.65062 7.56243 3.15789 8.07032C8.28128 13.5241 14.1656 18.1535 19.3904 23.4652C19.8977 23.961 20.7091 23.968 21.2164 23.4803C21.6729 22.9931 21.7237 22.195 21.2164 21.6992Z"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M31.0076 1.32805C31.1598 4.35925 31.3117 7.39046 31.4638 10.4222C31.4638 11.1165 32.0729 11.6526 32.783 11.6188C33.4932 11.5846 34.0002 10.9935 34.0002 10.2987C33.848 7.26248 33.6961 4.22674 33.5439 1.191C33.4932 0.496681 32.8844 -0.0358964 32.1742 0.00189291C31.5148 0.0396822 30.9569 0.634236 31.0076 1.32805Z"
-            />
-          </svg>
+        </motion.div>
+
+        {/* Feature 3 */}
+        <motion.div
+          className="flex relative flex-col items-center justify-center text-center max-w-xl"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeUp}
+          transition={{ delay: 0.4 }}
+        >
           <h1 className="text-2xl md:text-3xl font-extrabold text-secondary mb-4">
-            Community-Powered Growth{" "}
+            Community-Powered Growth
           </h1>
           <p className="text-sm text-gray-300 leading-relaxed">
             Join a growing ecosystem of creators, <br /> learners, and
             collectors shaping the <br /> next wave of digital ownership.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

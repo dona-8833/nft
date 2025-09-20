@@ -1,53 +1,97 @@
 import React from "react";
+import {motion} from 'framer-motion'
 
 function Features() {
   return (
     <div className="relative overflow-hidden pt-10 mt-10 p-2">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 z-10 flex justify-center">
+ <div className="relative mt-20">
+      {/* Glowing background */}
+      <motion.div
+        className="absolute top-0 left-1/2 -translate-x-1/2 z-10 flex justify-center"
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1 }}
+      >
         <div className="w-100 h-40 bg-primary/30 blur-3xl rounded-full"></div>
-      </div>
+      </motion.div>
 
-      <p className="text-xs text-gray-200 font-light text-center">
-        How Mintellect Works{" "}
-      </p>
-      <h1 className="text-center  font-bold text-4xl pt-5">
+      {/* Subtitle */}
+      <motion.p
+        className="text-xs text-gray-200 font-light text-center mt-4"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        How Mintellect Works
+      </motion.p>
+
+      {/* Heading */}
+      <motion.h1
+        className="text-center font-bold text-4xl pt-5"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.4 }}
+      >
         Learn, Take a Quiz, and Mint Your{" "}
         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           NFT
         </span>
-      </h1>
-      <div className="w-full flex items-center justify-center pt-25">
-                  <div className="absolute top-9 right-5 md:right-57 w-15 h-15 md:w-20 md:h-20   overflow-hidden  z-10 ">
-              <img
-                src="/bunny.png"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
-        <svg
+      </motion.h1>
+
+      {/* Content / SVG / Button */}
+      <motion.div
+        className="w-full flex items-center justify-center pt-25 relative"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.6 }}
+      >
+        {/* Bunny Image */}
+        <motion.div
+          className="absolute top-9 right-5 md:right-57 w-15 h-15 md:w-20 md:h-20 overflow-hidden z-10"
+          initial={{ opacity: 0, y: -20, rotate: -10 }}
+          whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1, delay: 0.8 }}
+        >
+          <img
+            src="/bunny.png"
+            alt="bunny"
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
+
+        {/* SVG */}
+        <motion.svg
           width="130"
           height="108"
           viewBox="0 0 130 108"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute md:top-30 md:left-100 top-40 left-0  md:block"
+          className="absolute md:top-30 md:left-100 top-40 left-0 md:block"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1, delay: 1 }}
         >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M60.9866 91.0112C75.5791 101.188 92.2457 108.614 108.76 107.142C114.825 106.601 120.44 104.34 126.202 102.089C126.708 101.891 126.959 101.318 126.761 100.813C126.564 100.307 125.991 100.055 125.486 100.253C119.899 102.436 114.463 104.655 108.587 105.178C92.3221 106.629 75.9409 99.1458 61.6177 89.0498C61.6659 88.904 61.7161 88.7581 61.7664 88.6122C62.8717 85.4058 62.1703 80.7303 60.3636 75.8178C57.7429 68.686 52.8573 61.0229 48.4641 56.7902C46.4383 54.8366 44.4768 53.6098 42.8751 53.3519C41.5406 53.1357 40.3951 53.5004 39.5108 54.5345C38.7833 55.3888 38.3673 56.4776 38.2447 57.7539C38.0819 59.4574 38.4477 61.5256 39.2174 63.7761C42.0652 72.1034 50.4316 83.0615 54.9675 86.5779C56.3884 87.6797 57.8334 88.7607 59.3045 89.8182C59.0111 90.7403 58.7277 91.6207 58.38 92.4334C57.8696 93.6263 57.2244 94.663 56.1352 95.4106C54.1255 96.7911 51.7158 97.0255 49.2519 96.6661C45.3068 96.093 41.2271 94.0092 38.2186 92.2224C21.2968 82.1733 12.9424 64.7346 8.44871 47.2386C3.90274 29.5446 3.30786 11.7699 1.96336 1.28586C1.89302 0.746683 1.39863 0.363782 0.860028 0.43411C0.321425 0.501833 -0.0604183 0.99676 0.00791197 1.53594C1.36045 12.0773 1.9714 29.9432 6.53948 47.7283C11.1598 65.7114 19.8197 83.5877 37.2137 93.9181C40.4152 95.8169 44.7703 98.0049 48.9685 98.617C51.9369 99.0468 54.8289 98.6977 57.2486 97.0359C58.6594 96.067 59.5316 94.749 60.1908 93.2096C60.4862 92.5193 60.7394 91.7796 60.9866 91.0112ZM59.9436 87.8516C60.8761 84.976 60.1144 80.8475 58.5147 76.4976C55.9965 69.6445 51.3179 62.2757 47.0975 58.2071C45.6827 56.8449 44.3382 55.8577 43.1504 55.4487C42.2923 55.1518 41.5426 55.1883 41.0101 55.8134C40.3971 56.5323 40.166 57.5143 40.176 58.6604C40.1861 59.981 40.5217 61.5048 41.0824 63.1405C43.8136 71.1266 51.8243 81.6498 56.1734 85.0203C57.4113 85.9788 58.6694 86.9244 59.9436 87.8516Z"
-            fill="#DBDBDB"
-          />
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M127.814 99.0507C127.747 99.5013 127.522 100.074 127.263 100.676C126.678 102.038 125.846 103.492 125.476 104.195C125.225 104.677 125.41 105.273 125.892 105.526C126.375 105.779 126.97 105.591 127.223 105.109C127.673 104.25 128.774 102.322 129.365 100.726C129.669 99.905 129.832 99.1497 129.799 98.6053C129.765 98.0713 129.548 97.7119 129.239 97.4566C128.913 97.1883 128.409 97.0294 127.735 97.0503C126.996 97.0737 125.941 97.3081 124.781 97.3941C123.808 97.467 122.745 97.4358 121.779 96.9513C121.292 96.7064 120.699 96.9018 120.456 97.3889C120.213 97.8734 120.408 98.4672 120.894 98.7095C122.707 99.6211 124.765 99.4232 126.391 99.1887C126.875 99.1184 127.476 99.0716 127.814 99.0507Z"
-            fill="#DBDBDB"
-          />
-        </svg>
+          {/* Your <path> elements here */}
+        </motion.svg>
 
-        <button className="btn btn-primary">Explore Marketplace</button>
-      </div>
+        {/* Button */}
+        <motion.button
+          className="btn btn-primary relative z-20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+        >
+          Explore Marketplace
+        </motion.button>
+      </motion.div>
+    </div>
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 my-9">
         {/* Step 1 */}
