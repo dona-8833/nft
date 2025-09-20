@@ -4,7 +4,7 @@ const cards = [
   {
     id: 1,
     img: "/char1.jpg",
-    title: "Cyber Samurai",
+    title: "Azuki",
     status: "Live",
     desc: "Complete a quick quiz to unlock this exclusive NFT.",
 
