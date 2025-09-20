@@ -10,30 +10,30 @@
 
   /* Backgrounds */
   --color-base-100: #151621; /* deeper dark */
-  --color-base-200: #0E0F14; /* top background */
+  --color-base-200: #0e0f14; /* top background */
   --color-base-300: #323237; /* graphite depth */
   /* --color-other: #323237;  */
-  --color-base-content: #FFFFFF;
+  --color-base-content: #ffffff;
 
   /* Brand palette */
-  --color-primary: #4A2CF5; /* Cyber Indigo */
+  --color-primary: #4a2cf5; /* Cyber Indigo */
   --color-primary-content: #ffffff;
 
-  --color-secondary: #20F7A7; /* Mint Green */
+  --color-secondary: #20f7a7; /* Mint Green */
   --color-secondary-content: #000000;
 
   /* Accents */
-  --color-accent: #C7B8FF; /* Soft Lavender */
-  --color-accent-content: #18181B;
+  --color-accent: #c7b8ff; /* Soft Lavender */
+  --color-accent-content: #18181b;
 
   /* Optional Premium Gold */
-  --color-warning: #FFD86B;
-  --color-warning-content: #18181B;
+  --color-warning: #ffd86b;
+  --color-warning-content: #18181b;
 
   /* Feedback */
-  --color-success: #20F7A7; /* Mint for success */
-  --color-error: #FF4D4F;   /* Error red */
-  --color-info: #4A2CF5;    /* Indigo as info */
+  --color-success: #20f7a7; /* Mint for success */
+  --color-error: #ff4d4f; /* Error red */
+  --color-info: #4a2cf5; /* Indigo as info */
 
   /* Radius + sizing */
   --radius-selector: 2rem;
@@ -45,4 +45,3 @@
   --depth: 1;
   --noise: 0;
 }
-

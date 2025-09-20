@@ -34,7 +34,6 @@ function CardStack() {
 
   return (
     <div className="flex items-center justify-center min-h-screen overflow-hidden">
-        
       <div className="relative flex items-center justify-center w-full max-w-5xl">
         {cards.map((card, index) => {
           const isActive = index === active;

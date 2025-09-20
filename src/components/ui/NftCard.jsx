@@ -2,7 +2,10 @@ import React from "react";
 
 function NftCard() {
   return (
-    <div className="flex items-center justify-center mt-10 relative  mx-4" data-theme="skibidinova">
+    <div
+      className="flex items-center justify-center mt-10 relative  mx-4"
+      data-theme="skibidinova"
+    >
       {/* Blurred background glow */}
       <div className="absolute inset-0 flex justify-center">
         <div className="w-[500px] h-[200px] bg-secondary/20 blur-3xl rounded-full"></div>
@@ -27,7 +30,11 @@ function NftCard() {
 
         {/* NFT Image */}
         <div className="w-full relative rounded-xl overflow-hidden border border-white/10 transition-all duration-300 hover:scale-103">
-          <img src="/NftGuy.jpg" alt="NFT" className="object-cover w-full h-full" />
+          <img
+            src="/NftGuy.jpg"
+            alt="NFT"
+            className="object-cover w-full h-full"
+          />
           <div className="absolute top-2 left-2 px-2 py-1 rounded-full backdrop-blur-md bg-gray-400/50 text-white shadow">
             <p className="text-xs">New</p>
           </div>
@@ -35,12 +42,10 @@ function NftCard() {
 
         {/* Meta Info */}
         <div className="flex justify-between gap-10 items-center">
-
-
-        <div className="text-white  flex flex-col w-full">
-          <p className="font-medium text-[12px]">!1914 0G Collection</p>
-          <p className="font-medium text-[12px] opacity-70">#3454</p>
-        </div >
+          <div className="text-white  flex flex-col w-full">
+            <p className="font-medium text-[12px]">!1914 0G Collection</p>
+            <p className="font-medium text-[12px] opacity-70">#3454</p>
+          </div>
           <div className="p-1 rounded-xl backdrop-blur-md flex items-center justify-center gap-1 bg-gray-400/50 w-fit text-white ">
             <p className="text-xs">500</p>
             <div className="w-3">
@@ -67,19 +72,21 @@ function NftCard() {
         </div>
 
         <div className="w-full relative rounded-xl overflow-hidden border border-white/10 transition-all duration-300 hover:scale-103">
-          <img src="/quiz.jpg" alt="NFT" className="object-cover w-full h-full" />
+          <img
+            src="/quiz.jpg"
+            alt="NFT"
+            className="object-cover w-full h-full"
+          />
           <div className="absolute top-2 left-2 px-2 py-1 rounded-full backdrop-blur-md bg-gray-400/50 text-white shadow">
             <p className="text-xs">New</p>
           </div>
         </div>
 
         <div className="flex justify-between gap-10 items-center">
-
-
-        <div className="text-white  flex flex-col w-full">
-          <p className="font-medium text-[12px]">!1914 0G Collection</p>
-          <p className="font-medium text-[12px] opacity-70">#3454</p>
-        </div >
+          <div className="text-white  flex flex-col w-full">
+            <p className="font-medium text-[12px]">!1914 0G Collection</p>
+            <p className="font-medium text-[12px] opacity-70">#3454</p>
+          </div>
           <div className="p-1 rounded-xl backdrop-blur-md flex items-center justify-center gap-1 bg-gray-400/50 w-fit text-white ">
             <p className="text-xs">500</p>
             <div className="w-3">
@@ -106,18 +113,20 @@ function NftCard() {
         </div>
 
         <div className="w-full relative rounded-xl overflow-hidden border border-white/10 transition-all duration-300 hover:scale-105">
-          <img src="/rain.jpg" alt="NFT" className="object-cover w-full h-full" />
+          <img
+            src="/rain.jpg"
+            alt="NFT"
+            className="object-cover w-full h-full"
+          />
           <div className="absolute top-2 left-2 px-2 py-1 rounded-full backdrop-blur-md bg-gray-400/50 text-white shadow">
             <p className="text-xs">New</p>
           </div>
         </div>
         <div className="flex justify-between gap-10 items-center">
-
-
-        <div className="text-white  flex flex-col w-full">
-          <p className="font-medium text-[12px]">!1914 0G Collection</p>
-          <p className="font-medium text-[12px] opacity-70">#3454</p>
-        </div >
+          <div className="text-white  flex flex-col w-full">
+            <p className="font-medium text-[12px]">!1914 0G Collection</p>
+            <p className="font-medium text-[12px] opacity-70">#3454</p>
+          </div>
           <div className="p-1 rounded-xl backdrop-blur-md flex items-center justify-center gap-1 bg-gray-400/50 w-fit text-white ">
             <p className="text-xs">500</p>
             <div className="w-3">
