@@ -2,14 +2,14 @@ import React from "react";
 
 function NftCard() {
   return (
-    <div className="flex items-center justify-center mt-10 relative  overflow-" data-theme="skibidinova">
+    <div className="flex items-center justify-center mt-10 relative  mx-4" data-theme="skibidinova">
       {/* Blurred background glow */}
       <div className="absolute inset-0 flex justify-center">
         <div className="w-[500px] h-[200px] bg-secondary/20 blur-3xl rounded-full"></div>
       </div>
 
       {/* Left Card */}
-      <div className="md:-rotate-20 left-10  transition-transform duration-300 flex flex-col gap-2 items-center p-3 md:p-4 rounded-xl bg-base-100/30 backdrop-blur-10xl  border border-primary/30 w-57 relative z-10">
+      <div className="md:-rotate-20 -rotate-10 left-20 md:left-10  transition-transform duration-300 flex flex-col gap-2 items-center p-3 md:p-4 rounded-xl bg-base-100/30 backdrop-blur-10xl  border border-primary/30 w-57 relative z-10">
         {/* Avatar + Info */}
         <div className="flex items-center gap-2 justify-start w-full">
           <div className="rounded-full overflow-hidden h-10 w-10 border border-white/20">
@@ -90,7 +90,7 @@ function NftCard() {
       </div>
 
       {/* Right Card */}
-      <div className="md:rotate-20 right-10 z-0 transition-transform duration-300 flex flex-col gap-2 items-center p-3 md:p-4 rounded-xl bg-base-100/30 backdrop-blur-10xl border border-primary/30 w-57 relative ">
+      <div className="md:rotate-20 rotate-10 right-20 md:right-10 z-0 transition-transform duration-300 flex flex-col gap-2 items-center p-3 md:p-4 rounded-xl bg-base-100/30 backdrop-blur-10xl border border-primary/30 w-57 relative ">
         <div className="flex items-center gap-2 justify-start w-full">
           <div className="rounded-full overflow-hidden h-10 w-10 border border-white/20">
             <img
