@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import Discover from "../components/Discover";
 import Reasson from "../components/Reasson";
+import RoadMap from "../components/RoadMap";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <Features />
         <Discover />
         <Reasson/>
+        <RoadMap/>
       </Layout>
     </div>
   );

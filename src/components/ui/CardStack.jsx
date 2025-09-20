@@ -69,6 +69,10 @@ function CardStack() {
           />
         </svg>
 
+
+
+
+
         {cards.map((card, index) => {
           const isActive = index === active;
           const isLeft = index < active;

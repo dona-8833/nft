@@ -10,13 +10,20 @@ function Features() {
       <p className="text-xs text-gray-200 font-light text-center">
         How Mintellect Works{" "}
       </p>
-      <h1 className="text-center relative font-bold text-4xl pt-5">
+      <h1 className="text-center  font-bold text-4xl pt-5">
         Learn, Take a Quiz, and Mint Your{" "}
         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           NFT
         </span>
       </h1>
       <div className="w-full flex items-center justify-center pt-25">
+                  <div className="absolute top-9 right-5 md:right-57 w-15 h-15 md:w-20 md:h-20   overflow-hidden  z-10 ">
+              <img
+                src="/bunny.png"
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
         <svg
           width="130"
           height="108"
