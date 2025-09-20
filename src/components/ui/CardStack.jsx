@@ -33,7 +33,7 @@ function CardStack() {
   const [active, setActive] = useState(1); // middle card index
 
   return (
-    <div className="flex items-center justify-center min-h-screen overflow-hidden">
+    <div className="flex items-center justify-center h-160 overflow-hidden">
       <div className="relative flex items-center justify-center w-full max-w-5xl">
         {cards.map((card, index) => {
           const isActive = index === active;
