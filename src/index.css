@@ -12,13 +12,14 @@
   --color-base-100: #151621; /* deeper dark */
   --color-base-200: #0e0f14; /* top background */
   --color-base-300: #323237; /* graphite depth */
+  /* --color-other: #323237;  */
   --color-base-content: #ffffff;
 
   /* Brand palette */
   --color-primary: #4a2cf5; /* Cyber Indigo */
   --color-primary-content: #ffffff;
 
-  --color-secondary: #20f7a7; /* Mint Green */
+  --color-secondary: #20f7a7;/* Mint Green */
   --color-secondary-content: #000000;
 
   /* Accents */
@@ -43,4 +44,4 @@
   --border: 1px;
   --depth: 1;
   --noise: 0;
-}
+};

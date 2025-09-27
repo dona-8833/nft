@@ -1,97 +1,100 @@
 import React from "react";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Features() {
   return (
     <div className="relative overflow-hidden pt-10 mt-10 p-2">
- <div className="relative mt-20">
-      {/* Glowing background */}
-      <motion.div
-        className="absolute top-0 left-1/2 -translate-x-1/2 z-10 flex justify-center"
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1 }}
-      >
-        <div className="w-100 h-40 bg-primary/30 blur-3xl rounded-full"></div>
-      </motion.div>
-
-      {/* Subtitle */}
-      <motion.p
-        className="text-xs text-gray-200 font-light text-center mt-4"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        How Mintellect Works
-      </motion.p>
-
-      {/* Heading */}
-      <motion.h1
-        className="text-center font-bold text-4xl pt-5"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1, delay: 0.4 }}
-      >
-        Learn, Take a Quiz, and Mint Your{" "}
-        <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-          NFT
-        </span>
-      </motion.h1>
-
-      {/* Content / SVG / Button */}
-      <motion.div
-        className="w-full flex items-center justify-center pt-25 relative"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1, delay: 0.6 }}
-      >
-        {/* Bunny Image */}
+      <div className="relative mt-20">
+        {/* Glowing background */}
         <motion.div
-          className="absolute top-9 right-5 md:right-57 w-15 h-15 md:w-20 md:h-20 overflow-hidden z-10"
-          initial={{ opacity: 0, y: -20, rotate: -10 }}
-          whileInView={{ opacity: 1, y: 0, rotate: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1, delay: 0.8 }}
-        >
-          <img
-            src="/bunny.png"
-            alt="bunny"
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
-
-        {/* SVG */}
-        <motion.svg
-          width="130"
-          height="108"
-          viewBox="0 0 130 108"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="absolute md:top-30 md:left-100 top-40 left-0 md:block"
-          initial={{ opacity: 0, scale: 0.8 }}
+          className="absolute top-0 left-1/2 -translate-x-1/2 z-10 flex justify-center"
+          initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 1 }}
         >
-          {/* Your <path> elements here */}
-        </motion.svg>
+          <div className="w-100 h-40 bg-primary/30 blur-3xl rounded-full"></div>
+        </motion.div>
 
-        {/* Button */}
-        <motion.button
-          className="btn btn-primary relative z-20"
+        {/* Subtitle */}
+        <motion.p
+          className="text-xs text-gray-200 font-light text-center mt-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Explore Marketplace
-        </motion.button>
-      </motion.div>
-    </div>
+          How Mintellect Works
+        </motion.p>
+
+        {/* Heading */}
+        <motion.h1
+          className="text-center font-bold text-4xl pt-5"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
+          Learn, Take a Quiz, and Mint Your{" "}
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            NFT
+          </span>
+        </motion.h1>
+
+        {/* Content / SVG / Button */}
+        <motion.div
+          className="w-full flex items-center justify-center pt-25 relative"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
+          {/* Bunny Image */}
+          <motion.div
+            className="absolute top-9 right-5 md:right-57 w-15 h-15 md:w-20 md:h-20 overflow-hidden z-10"
+            initial={{ opacity: 0, y: -20, rotate: -10 }}
+            whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1, delay: 0.8 }}
+          >
+            <img
+              src="/bunny.png"
+              alt="bunny"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+
+          {/* SVG */}
+          <motion.svg
+            width="130"
+            height="108"
+            viewBox="0 0 130 108"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute md:top-30 md:left-100 top-40 left-0 md:block"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            {/* Your <path> elements here */}
+          </motion.svg>
+
+          {/* Button */}
+          <Link to="/marketplace">
+            <motion.button
+              className="btn btn-primary relative z-20"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.8, delay: 1 }}
+            >
+              Explore Marketplace
+            </motion.button>
+          </Link>
+        </motion.div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 my-9">
         {/* Step 1 */}
