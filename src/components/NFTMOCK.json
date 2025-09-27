@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Fake Capy Friends",
+    "creator": "Animoca Inc",
+    "floorValue": "5000 $EDU",
+    "percentChange": "200%",
+    "volume": "10,000",
+    "sales": 335,
+    "holdersChange": "+30%",
+    "wallets": 800,
+    "image": "/fake.jpg"
+  },
+  {
+    "name": "Leo Natsume",
+    "creator": "Zanick.eth",
+    "floorValue": "3000 $EDU",
+    "percentChange": "200%",
+    "volume": "10,000",
+    "sales": 335,
+    "holdersChange": "+30%",
+    "wallets": 800,
+    "image": "/leo.jpg"
+  },
+  {
+    "name": "Japan Ying Yang",
+    "creator": "Wazzigmii",
+    "floorValue": "500 $EDU",
+    "percentChange": "200%",
+    "volume": "10,000",
+    "sales": 335,
+    "holdersChange": "+30%",
+    "wallets": 800,
+    "image": "/japan.jpg"
+  },
+  {
+    "name": "Allanta Crocs",
+    "creator": "Gobriel.ed",
+    "floorValue": "10,000$EDU",
+    "percentChange": "200%",
+    "volume": "10,000",
+    "sales": 335,
+    "holdersChange": "+30%",
+    "wallets": 800,
+    "image": "/croc.jpg"
+  }
+]
