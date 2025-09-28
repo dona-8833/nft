@@ -16,12 +16,12 @@ function Nav() {
           <Link to="/" className="hover:text-primary text-md text-gray-200 font-medium">
             Home
           </Link>
-          <a href="#" className="hover:text-primary text-md text-gray-200 font-medium">
+          <Link to="/collections" className="hover:text-primary text-md text-gray-200 font-medium">
             Collection
-          </a>
-          <Link to="/launchpad" className="hover:text-primary text-md text-gray-200 font-medium">
-            LaunchPad
           </Link>
+          <a href="#" className="hover:text-primary text-md text-gray-200 font-medium">
+            LaunchPad
+          </a>
           <a href="#" className="hover:text-primary text-md text-gray-200 font-medium">
             Listing
           </a>
@@ -37,12 +37,12 @@ function Nav() {
           <Link to="/" className="hover:text-primary text-md font-medium">
             Home
           </Link>
-          <a href="#" className="hover:text-primary text-md font-medium">
+          <Link to="/collections" className="hover:text-primary text-md font-medium">
             Collection
-          </a>
-          <Link to="/launchpad" className="hover:text-primary text-md font-medium">
-            LaunchPad
           </Link>
+          <a href="#" className="hover:text-primary text-md font-medium">
+            LaunchPad
+          </a>
           <a href="#" className="hover:text-primary text-md font-medium">
             Listing
           </a>

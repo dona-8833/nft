@@ -29,9 +29,9 @@ function Nav() {
           <Link to = "/collections" className="hover:text-primary text-md font-medium">
             Collections
           </Link>
-          <a href="#" className="hover:text-primary text-md font-medium">
+          <Link to="/launchpad" className="hover:text-primary text-md font-medium">
             LaunchPad
-          </a>
+          </Link>
           <a href="#" className="hover:text-primary text-md font-medium">
             Listing
           </a>
@@ -46,9 +46,9 @@ function Nav() {
         <Link to="/collections" className="hover:text-primary text-md font-medium">
           Collections
         </Link>
-        <a href="#" className="hover:text-primary text-md font-medium">
+        <Link to="/launchpad" className="hover:text-primary text-md font-medium">
           LaunchPad
-        </a>
+        </Link>
         <a href="#" className="hover:text-primary text-md font-medium">
           Listing
         </a>

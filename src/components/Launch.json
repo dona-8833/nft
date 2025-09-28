@@ -1,0 +1,50 @@
+[
+  {
+    "creatorName": "Animoca Inc",
+    "creatorRole": "Creator",
+    "creatorImage": "/pepeKing.jpg",
+    "nftImage": "/fake.jpg",
+    "collectionName": "Fake Capy Friends",
+    "price": "5000 $EDU",
+    "amounts": 335,
+    "minted": "200%",
+    "status": "Live",
+    "statusIcon": "/live.png"
+  },
+  {
+    "creatorName": "Zanick.eth",
+    "creatorRole": "Creator",
+    "creatorImage": "/pepeKing.jpg",
+    "nftImage": "/leo.jpg",
+    "collectionName": "Leo Natsume",
+    "price": "3000 $EDU",
+    "amounts": 335,
+    "minted": "200%",
+    "status": "Live",
+    "statusIcon": "/live.png"
+  },
+  {
+    "creatorName": "Wazzigmii",
+    "creatorRole": "Creator",
+    "creatorImage": "/pepeKing.jpg",
+    "nftImage": "/japan.jpg",
+    "collectionName": "Japan Ying Yang",
+    "price": "500 $EDU",
+    "amounts": 335,
+    "minted": "200%",
+    "status": "Live",
+    "statusIcon": "/live.png"
+  },
+  {
+    "creatorName": "Gobriel.ed",
+    "creatorRole": "Creator",
+    "creatorImage": "/pepeKing.jpg",
+    "nftImage": "/croc.jpg",
+    "collectionName": "Allanta Crocs",
+    "price": "10,000 $EDU",
+    "amounts": 335,
+    "minted": "200%",
+    "status": "Live",
+    "statusIcon": "/live.png"
+  }
+]

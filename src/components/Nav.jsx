@@ -12,16 +12,16 @@ function Nav() {
       </div>
       <div className="p-[2px] hidden  rounded-full bg-gradient-to-r from-primary to-secondary md:inline-block">
         <div className="flex items-center gap-6 bg-base-200 rounded-full px-6 py-3 text-white">
-          <a href="#" className="hover:text-primary text-xs font-medium">
+          <a href="#" className="hover:text-primary text-md font-medium">
             Home
           </a>
-          <a href="#" className="hover:text-primary text-xs font-medium">
+          <a href="#" className="hover:text-primary text-md font-medium">
             Explore
           </a>
-          <a href="#" className="hover:text-primary text-xs font-medium">
+          <a href="#" className="hover:text-primary text-md font-medium">
             About
           </a>
-          <a href="#" className="hover:text-primary text-xs font-medium">
+          <a href="#" className="hover:text-primary text-md font-medium">
             How it works
           </a>
         </div>
