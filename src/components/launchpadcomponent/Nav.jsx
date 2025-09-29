@@ -39,24 +39,22 @@ function Nav() {
           <RxHamburgerMenu onClick={() => setIsOpen(!isOpen)}/>
         </div>
     </div>
-<div
-  className={`flex absolute right-0 top-16 z-20 items-center flex-col gap-6 md:hidden justify-center rounded-2xl px-6 py-4 text-gray-300 bg-base-100 transition-all duration-300 ease-in-out
-    ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"}
-  `}
->
-  <Link to="/collections" className="hover:text-primary text-md font-medium">
-    Collections
-  </Link>
-  <Link to="/launchpad" className="hover:text-primary text-md font-medium">
-    LaunchPad
-  </Link>
-  <a href="#" className="hover:text-primary text-md font-medium">
-    Listing
-  </a>
-  <div>
-    <button className="btn btn-primary">Connect Wallet</button>
-  </div>
-</div>
+    {isOpen &&(  
+            <div className="flex absolute right-0 bg-base-100 transition-all duration-300 ease-in-out top-15  z-20 items-center flex-col gap-6 md:hidden justify-center rounded-2xl px-6 py-4 text-gray-300 ">
+        <Link to="/collections" className="hover:text-primary text-md font-medium">
+          Collections
+        </Link>
+        <Link to="/launchpad" className="hover:text-primary text-md font-medium">
+          LaunchPad
+        </Link>
+        <a href="#" className="hover:text-primary text-md font-medium">
+          Listing
+        </a>
+                <div className="">
+          <button className="btn btn-primary">connect wallet</button>
+        </div>
+      </div>
+    )}      
 </nav>
   );
 }
