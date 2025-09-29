@@ -90,20 +90,36 @@ function Hero() {
         transition={{ duration: 1, delay: 1.7 }}
       >
         <p className="text-center font-bold">Trusted by</p>
-        <div className="flex flex-wrap justify-around mt-5">
-          <div className="w-30 h-15">
-            <img src="/base.png" alt="" />
-          </div>
-          <div className="w-30 h-15">
-            <img src="/Novous.png" alt="" />
-          </div>
-          <div className="w-30 h-15">
-            <img src="/vista.png" alt="" />
-          </div>
-          <div className="w-30 h-15">
-            <img src="/africa.png" alt="" />
-          </div>
-        </div>
+<div className="overflow-hidden relative w-full h-20 ">
+  <div className="flex animate-marquee gap-8">
+    <img src="/base.png" alt="Base" className="w-32 h-16 object-contain" />
+    <img src="/Novous.png" alt="Novous" className="w-32 h-16 object-contain" />
+    <img src="/vista.png" alt="Vista" className="w-32 h-16 object-contain" />
+    <img src="/africa.png" alt="Africa" className="w-32 h-16 object-contain" />
+    {/* Repeat images for smooth loop */}
+    <img src="/base.png" alt="Base" className="w-32 h-16 object-contain" />
+    <img src="/Novous.png" alt="Novous" className="w-32 h-16 object-contain" />
+    <img src="/vista.png" alt="Vista" className="w-32 h-16 object-contain" />
+    <img src="/africa.png" alt="Africa" className="w-32 h-16 object-contain" />
+    <img src="/base.png" alt="Base" className="w-32 h-16 object-contain" />
+    <img src="/Novous.png" alt="Novous" className="w-32 h-16 object-contain" />
+    <img src="/vista.png" alt="Vista" className="w-32 h-16 object-contain" />
+    <img src="/africa.png" alt="Africa" className="w-32 h-16 object-contain" />
+  </div>
+
+  <style>
+    {`
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        animation: marquee 20s linear infinite;
+      }
+    `}
+  </style>
+</div>
+
 
         <motion.div
           className="w-10 md:w-15 absolute md:top-45 md:right-65 top-50 right-1"

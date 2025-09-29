@@ -45,7 +45,7 @@ function RoadMap() {
       </svg>
       <div className="flex flex-col gap-8 md:gap-0 mt-20 md:mx-20">
         <motion.div
-          className="flex items-center gap-30 justify-between flex-col md:flex-row"
+          className="flex items-center gap-30  flex-col md:flex-row"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -59,7 +59,7 @@ function RoadMap() {
             transition={{ duration: 0.5 }}
           >
             <div className="bg-gradient-to-b w-fit rounded-full p-1 from-primary to-secondary">
-              <img src="/gear.png" alt="" />
+              <img src="/gear.png" className="w-15 h-15" alt="" />
             </div>
             <p className="text-secondary font-medium">phase 1</p>
             <h4 className="text-2xl font-bold">Testnet Launch</h4>
@@ -75,7 +75,7 @@ function RoadMap() {
             viewBox="0 0 199 18"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="rotate-90 md:rotate-0"
+            className="rotate-90 md:rotate-0  md:h-auto w-30"
           >
             <path
               d="M198.66 9L190 0.339746L181.34 9L190 17.6603L198.66 9ZM190 9V7.5H186.042V9V10.5H190V9ZM178.125 9V7.5H170.208V9V10.5H178.125V9ZM162.292 9V7.5L154.375 7.5V9V10.5H162.292V9ZM146.458 9V7.5H138.542V9V10.5H146.458V9ZM130.625 9V7.5L122.708 7.5V9V10.5H130.625V9ZM114.792 9V7.5H106.875V9V10.5H114.792V9ZM98.9583 9V7.5H91.0417V9V10.5H98.9583V9ZM83.125 9V7.5H75.2083V9V10.5H83.125V9ZM67.2917 9V7.5L59.375 7.5V9V10.5H67.2917V9ZM51.4583 9V7.5H43.5417V9V10.5L51.4583 10.5V9ZM35.625 9V7.5H27.7083V9V10.5H35.625V9ZM19.7917 9V7.5H11.875V9V10.5H19.7917V9ZM3.95831 9V7.5H0V9V10.5H3.95831V9Z"
@@ -105,7 +105,7 @@ function RoadMap() {
             transition={{ duration: 0.5 }}
           >
             <div className="bg-gradient-to-b w-fit rounded-full p-1 from-primary to-secondary">
-              <img src="/rocket.png" alt="" />
+              <img src="/rocket.png " className="w-15 h-15" alt="" />
             </div>
             <p className="text-secondary font-medium">phase 2</p>
             <h4 className="text-2xl font-bold">Mainnet Launch</h4>
@@ -133,7 +133,7 @@ function RoadMap() {
             viewBox="0 0 18 199"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="md:absolute right-33"
+            className="md:absolute right-66  h-30"
           >
             <path
               d="M9 198.66L17.6603 190L9 181.34L0.339746 190L9 198.66ZM9 190H10.5V186.042H9H7.5L7.5 190H9ZM9 178.125H10.5L10.5 170.208H9H7.5L7.5 178.125H9ZM9 162.292H10.5V154.375H9H7.5L7.5 162.292H9ZM9 146.458H10.5L10.5 138.542H9H7.5L7.5 146.458H9ZM9 130.625H10.5V122.708H9H7.5L7.5 130.625H9ZM9 114.792H10.5L10.5 106.875H9H7.5L7.5 114.792H9ZM9 98.9583H10.5L10.5 91.0417H9H7.5L7.5 98.9583H9ZM9 83.125H10.5L10.5 75.2083H9H7.5L7.5 83.125H9ZM9 67.2917H10.5V59.375H9H7.5L7.5 67.2917H9ZM9 51.4583H10.5L10.5 43.5417H9H7.5L7.5 51.4583H9ZM9 35.625H10.5L10.5 27.7083H9H7.5L7.5 35.625H9ZM9 19.7917H10.5L10.5 11.875H9H7.5L7.5 19.7917H9ZM9 3.95831H10.5V0H9H7.5L7.5 3.95831H9Z"
@@ -143,7 +143,7 @@ function RoadMap() {
           </svg>
         </motion.div>
         <motion.div
-          className="flex items-center gap-30 justify-between flex-col-reverse md:flex-row"
+          className="flex items-center gap-30  flex-col-reverse md:flex-row"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -157,7 +157,7 @@ function RoadMap() {
             transition={{ duration: 0.5 }}
           >
             <div className="bg-gradient-to-b w-fit rounded-full p-1 from-primary to-secondary">
-              <img src="/growth.png" alt="" />
+              <img src="/growth.png" className="w-15 h-15" alt="" />
             </div>
             <p className="text-secondary font-medium">phase 4</p>
             <h4 className="text-2xl font-bold">Edu Growth & Rewards</h4>
@@ -173,7 +173,7 @@ function RoadMap() {
             viewBox="0 0 199 18"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="rotate-90 md:rotate-180"
+            className="rotate-90 md:rotate-180 md:h-auto w-30"
           >
             <path
               d="M198.66 9L190 0.339746L181.34 9L190 17.6603L198.66 9ZM190 9V7.5H186.042V9V10.5H190V9ZM178.125 9V7.5H170.208V9V10.5H178.125V9ZM162.292 9V7.5L154.375 7.5V9V10.5H162.292V9ZM146.458 9V7.5H138.542V9V10.5H146.458V9ZM130.625 9V7.5L122.708 7.5V9V10.5H130.625V9ZM114.792 9V7.5H106.875V9V10.5H114.792V9ZM98.9583 9V7.5H91.0417V9V10.5H98.9583V9ZM83.125 9V7.5H75.2083V9V10.5H83.125V9ZM67.2917 9V7.5L59.375 7.5V9V10.5H67.2917V9ZM51.4583 9V7.5H43.5417V9V10.5L51.4583 10.5V9ZM35.625 9V7.5H27.7083V9V10.5H35.625V9ZM19.7917 9V7.5H11.875V9V10.5H19.7917V9ZM3.95831 9V7.5H0V9V10.5H3.95831V9Z"
@@ -203,7 +203,7 @@ function RoadMap() {
             transition={{ duration: 0.5 }}
           >
             <div className="bg-gradient-to-b w-fit rounded-full p-1 from-primary to-secondary">
-              <img src="/more.png" alt="" />
+              <img src="/more.png" className="w-15 h-15" alt="" />
             </div>
             <p className="text-secondary font-medium">phase 3</p>
             <h4 className="text-2xl font-bold">Marketplace & more</h4>

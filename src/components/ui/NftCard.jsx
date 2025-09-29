@@ -11,8 +11,11 @@ function NftCard() {
         <div className="w-[500px] h-[200px] bg-secondary/20 blur-3xl rounded-full"></div>
       </div>
 
+      <img src="/cube.png" className="absolute -top-15 w-[200px] h-[200px] md:w-[239px] md:h-[239px] left-5 lg:left-60 md:left-0"  alt="" />
+      <img src="/cube.png" className="absolute -bottom-10  w-[200px] h-[200px] md:w-[239px] md:h-[239px] right-10 lg:right-75 md:right-10" alt="" />
+
       {/* Left Card */}
-      <div className="md:-rotate-20 -rotate-10 left-20 md:left-10  transition-transform duration-300 flex flex-col gap-2 items-center p-3 md:p-4 rounded-xl bg-base-100/30 backdrop-blur-10xl  border border-primary/30 w-57 relative z-10">
+      <div className="md:-rotate-20 -rotate-10 left-20 md:left-10  transition-transform duration-300 flex flex-col gap-2 items-center p-3 md:p-4 rounded-xl bg-info  backdrop-blur-xs  border border-primary/30 w-57 relative z-10">
         {/* Avatar + Info */}
         <div className="flex items-center gap-2 justify-start w-full">
           <div className="rounded-full overflow-hidden h-10 w-10 border border-white/20">
@@ -56,7 +59,7 @@ function NftCard() {
       </div>
 
       {/* Middle Card */}
-      <div className=" transition-transform duration-300 flex flex-col gap-2 items-center p-3 md:p-4 rounded-xl bg-base-100/60 backdrop-blur-xl border border-primary/30 w-57 relative z-10">
+      <div className=" transition-transform duration-300 flex flex-col gap-2 items-center p-3 md:p-4 rounded-xl bg-info backdrop-blur-xs border border-primary/30 w-57 relative z-10">
         <div className="flex items-center gap-2 justify-start w-full">
           <div className="rounded-full overflow-hidden h-10 w-10 border border-white/20">
             <img
@@ -97,7 +100,7 @@ function NftCard() {
       </div>
 
       {/* Right Card */}
-      <div className="md:rotate-20 rotate-10 right-20 md:right-10 z-0 transition-transform duration-300 flex flex-col gap-2 items-center p-3 md:p-4 rounded-xl bg-base-100/30 backdrop-blur-10xl border border-primary/30 w-57 relative ">
+      <div className="md:rotate-20 rotate-10 right-20 md:right-10 z-0 transition-transform duration-300 flex flex-col gap-2 items-center p-3 md:p-4 rounded-xl bg-info backdrop-blur-xs border border-primary/30 w-57 relative ">
         <div className="flex items-center gap-2 justify-start w-full">
           <div className="rounded-full overflow-hidden h-10 w-10 border border-white/20">
             <img

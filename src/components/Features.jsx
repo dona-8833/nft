@@ -293,6 +293,20 @@ function Features() {
               className="w-full h-full object-cover"
             />
           </div>
+          <div className="absolute top-12 right-6 w-12 h-12 opacity-50 rounded-full overflow-hidden border z-10 sm:top-2 sm:right-20 sm:w-16 sm:h-16">
+            <img
+              src="/ugly.png"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute top-12 right-36 w-12 h-12 opacity-50 rounded-full overflow-hidden border z-10 sm:top-15 sm:right-40 sm:w-16 sm:h-16">
+            <img
+              src="/launch1.png"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
 
           {/* Text content */}
           <div className="relative z-20 mt-24 md:mt-0 md:absolute bottom-4 right-4 text-center md:text-right">
@@ -311,8 +325,8 @@ function Features() {
         <div className="bg-base-300/30 md:col-span-2 p-4 col-span-1 flex flex-col items-center justify-center rounded-xl border border-secondary/20">
           <div className="relative w-fit py-4">
             {/* Neon circle */}
-            <div className="bg-error w-fit p-6 rounded-full shadow-[0_0_10px_#FF4D4F,0_0_20px_#FF4D4F,0_0_30px_#FF4D4F]">
-              <p className="font-bold text-4xl text-white drop-shadow-[0_0_10px_#FF4D4F]">
+            <div className="bg-error w-fit px-4 py-2 rounded-full shadow-[0_0_10px_#FF4D4F,0_0_10px_#FF4D4F,0_0_10px_#FF4D4F]">
+              <p className="font-bold text-2xl text-white drop-shadow-[0_0_10px_#FF4D4F]">
                 1 + 1 = 11
               </p>
             </div>
@@ -329,7 +343,7 @@ function Features() {
         {/* Step 4 */}
         <div className="bg-base-300/30 md:col-span-3 p-4 col-span-1 flex relative overflow-hidden items-center justify-center rounded-xl border border-secondary/20">
           {/* Floating circles */}
-          <div className="absolute top-2 right-8 w-12 h-12 opacity-50 rounded-full overflow-hidden border z-10 sm:w-16 sm:h-16">
+          <div className="absolute top-2 right-2 w-12 h-12 opacity-50 rounded-full overflow-hidden border z-10 sm:w-16 sm:h-16">
             <img
               src="/rain.jpg"
               alt=""
@@ -343,14 +357,14 @@ function Features() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute bottom-4 right-8 w-12 h-12 opacity-50 rounded-full overflow-hidden border z-10 sm:w-16 sm:h-16">
+          <div className="absolute bottom-4 right-2 w-12 h-12 opacity-50 rounded-full overflow-hidden border z-10 sm:w-16 sm:h-16">
             <img
               src="/pepeKing.jpg"
               alt=""
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute top-2 left-8 w-12 h-12 opacity-50 rounded-full overflow-hidden border z-10 sm:w-16 sm:h-16">
+          <div className="absolute top-2 left-2 w-12 h-12 opacity-50 rounded-full overflow-hidden border z-10 sm:w-16 sm:h-16">
             <img
               src="/rain.jpg"
               alt=""
@@ -364,7 +378,7 @@ function Features() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute bottom-4 left-8 w-12 h-12 opacity-50 rounded-full overflow-hidden border z-10 sm:w-16 sm:h-16">
+          <div className="absolute bottom-4 left-2 w-12 h-12 opacity-50 rounded-full overflow-hidden border z-10 sm:w-16 sm:h-16">
             <img
               src="/pepeKing.jpg"
               alt=""

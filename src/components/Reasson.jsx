@@ -10,7 +10,7 @@ function Reasson() {
 
   return (
     <div className="w-full relative pb-10">
-      <div className="flex items-center w-full md:gap-20 gap-5 flex-col-reverse md:flex-row justify-center">
+      <div className="flex items-center w-full md:gap-10  gap-4 flex-col-reverse md:flex-row justify-center">
         {/* Text Section */}
         <motion.div
           initial="hidden"
@@ -18,7 +18,7 @@ function Reasson() {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeUp}
         >
-          <h1 className="text-2xl md:text-4xl text-center md:text-left font-bold">
+          <h1 className="text-2xl md:text-4xl   text-center md:text-left font-black">
             <svg
               width="162"
               height="22"
@@ -43,7 +43,7 @@ function Reasson() {
 
         {/* Image Section */}
         <motion.div
-          className="h-[420px] w-full md:w-[800px] overflow-hidden rounded-4xl flex items-center justify-center"
+          className="h-[500px] w-full md:w-[800px] overflow-hidden md:rounded-4xl rounded-none flex items-center justify-center"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.8 } }}
           viewport={{ once: true, amount: 0.3 }}

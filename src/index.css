@@ -12,7 +12,7 @@
   --color-base-100: #151621; /* deeper dark */
   --color-base-200: #0e0f14; /* top background */
   --color-base-300: #323237; /* graphite depth */
-  /* --color-other: #323237;  */
+
   --color-base-content: #ffffff;
 
   /* Brand palette */
@@ -33,7 +33,7 @@
   /* Feedback */
   --color-success: #20f7a7; /* Mint for success */
   --color-error: #ff4d4f; /* Error red */
-  --color-info: #4a2cf5; /* Indigo as info */
+  --color-info: #3232374D; /* Indigo as info */
 
   /* Radius + sizing */
   --radius-selector: 2rem;

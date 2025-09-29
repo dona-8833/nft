@@ -41,7 +41,7 @@ function CardStack() {
           viewBox="0 0 224 152"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute -top-80 right-0 z-120"
+          className="absolute -top-80 w-30 right-0 z-120"
         >
           <path
             fill-rule="evenodd"
@@ -68,6 +68,7 @@ function CardStack() {
             fill="#D5D5D5"
           />
         </svg>
+        <img src="/cone.png" className="absolute -top-80 md:w-30 w-20 left-0 z-120" alt="" />
 
 
 
@@ -83,27 +84,27 @@ function CardStack() {
               key={card.id}
               onClick={() => setActive(index)}
               className={`
-                cursor-pointer transition-all duration-500 ease-in-out
+                cursor-pointer transition-all   duration-500 ease-in-out
                 absolute top-1/2
                 ${
                   isActive
                     ? "z-20 scale-105 -translate-y-2/3"
-                    : "z-10 scale-90 -translate-y-1/2"
+                    : "z-10 scale-90 -translate-y-1/3"
                 }
                 ${
                   isLeft
-                    ? "md:-translate-x-65 -translate-x-40  -skew-x-6 -skew-y-[16deg] opacity-80"
+                    ? "md:-translate-x-75 -translate-x-40 -skew-y-[20deg]  opacity-80"
                     : ""
                 }
                 ${
                   isRight
-                    ? "md:translate-x-65 translate-x-40  skew-x-6 skew-y-[16deg] opacity-80"
+                    ? "md:translate-x-75 translate-x-40 skew-y-[20deg]  opacity-80"
                     : ""
                 }
                 ${isActive ? "translate-x-0 rotate-0 skew-x-0" : ""}
               `}
             >
-              <div className="w-60 sm:w-72 h-80 sm:h-96 rounded-2xl overflow-hidden shadow-xl border border-white/20 bg-white/5 backdrop-blur-sm relative">
+              <div className="w-60 sm:w-72 h-80 sm:h-96   rounded-2xl overflow-hidden shadow-xl border border-white/20 bg-white/5 backdrop-blur-sm relative">
                 {/* Full image background */}
                 <img
                   src={card.img}
