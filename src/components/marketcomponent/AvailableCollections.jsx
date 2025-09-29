@@ -10,7 +10,7 @@ function AvailableCollections() {
         </h2>
 
         <div className="overflow-x-auto w-full">
-          <table className="border-collapse w-full text-white min-w-[600px]">
+          <table className="border-collapse hidden md:block w-full text-white min-w-[600px]">
             <thead>
               <tr className="border-b border-gray-700 text-left text-gray-400">
                 <th className="p-3 sticky left-0 bg-base-100 z-10">
@@ -70,6 +70,54 @@ function AvailableCollections() {
               )}
             </tbody>
           </table>
+                  <div className="grid grid-cols-2 gap-4 md:hidden">
+          {" "}
+          {collectionsData.map(
+            ({ name, creator, floorValue, volume, image }, i) => (
+              <div
+                key={i}
+                className="transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_#20f7a7]/40 flex flex-col gap-3 items-center p-3 rounded-xl bg-base-100/60 backdrop-blur-xl border border-primary/30 relative z-10"
+              >
+                {" "}
+                {/* Collection Info */}{" "}
+                <div className="flex flex-col items-center gap-2 w-full">
+                  {" "}
+                  <div className=" overflow-hidden rounded-2xl border border-white/20">
+                    {" "}
+                    <img
+                      src={image}
+                      alt={name}
+                      className="object-cover h-full w-full"
+                    />{" "}
+                  </div>{" "}
+                  <div className="text-white flex flex-col items-start w-full justify-end">
+                    {" "}
+                    <p className="font-medium text-lg">{name}</p>{" "}
+                    <p className="text-[10px] opacity-70">{creator}</p>{" "}
+                  </div>{" "}
+                </div>{" "}
+                {/* Floor + Volume Only */}{" "}
+                <div className="flex justify-between w-full items-center text-white text-sm mt-2">
+                  {" "}
+                  <div className="flex flex-col">
+                    {" "}
+                    <p className="font-bold text-[12px] opacity-70">
+                      Floor
+                    </p>{" "}
+                    <p className="font-semibold text-secondary">{floorValue}</p>{" "}
+                  </div>{" "}
+                  <div className="flex flex-col text-right">
+                    {" "}
+                    <p className="font-bold text-[12px] opacity-70">
+                      Volume
+                    </p>{" "}
+                    <p className="font-semibold">{volume}</p>{" "}
+                  </div>{" "}
+                </div>{" "}
+              </div>
+            )
+          )}{" "}
+        </div>
 
 
         </div>
