@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function RoadMap() {
   return (
-    <div className="relative">
+    <div className="relative " id="roadmap">
       <div className="px-4 relative max-w-full overflow-x-hidden">
         <motion.p
           className="text-sm text-center text-gray-200 font-light"

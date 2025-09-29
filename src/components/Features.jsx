@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Features() {
   return (
-    <div className="relative overflow-hidden pt-10 mt-10 p-2">
+    <div className="relative overflow-hidden pt-10 mt-10 p-2" id="features">
       <div className="relative mt-20">
         {/* Glowing background */}
         <motion.div

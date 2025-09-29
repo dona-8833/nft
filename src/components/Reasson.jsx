@@ -9,7 +9,7 @@ function Reasson() {
   };
 
   return (
-    <div className="w-full relative pb-10">
+    <div className="w-full relative pb-10 " id="about">
       <div className="flex items-center w-full md:gap-10  gap-4 flex-col-reverse md:flex-row justify-center">
         {/* Text Section */}
         <motion.div
