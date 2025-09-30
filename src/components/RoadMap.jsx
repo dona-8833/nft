@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 
 function RoadMap() {
   return (
+    <>
+    <div className="flex justify-center items-center pt-10">
+
     <div className="relative " id="roadmap">
       <div className="px-4 relative max-w-full overflow-x-hidden">
         <motion.p
@@ -133,7 +136,7 @@ function RoadMap() {
             viewBox="0 0 18 199"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="md:absolute right-66  h-30"
+            className="md:absolute right-40  h-30"
           >
             <path
               d="M9 198.66L17.6603 190L9 181.34L0.339746 190L9 198.66ZM9 190H10.5V186.042H9H7.5L7.5 190H9ZM9 178.125H10.5L10.5 170.208H9H7.5L7.5 178.125H9ZM9 162.292H10.5V154.375H9H7.5L7.5 162.292H9ZM9 146.458H10.5L10.5 138.542H9H7.5L7.5 146.458H9ZM9 130.625H10.5V122.708H9H7.5L7.5 130.625H9ZM9 114.792H10.5L10.5 106.875H9H7.5L7.5 114.792H9ZM9 98.9583H10.5L10.5 91.0417H9H7.5L7.5 98.9583H9ZM9 83.125H10.5L10.5 75.2083H9H7.5L7.5 83.125H9ZM9 67.2917H10.5V59.375H9H7.5L7.5 67.2917H9ZM9 51.4583H10.5L10.5 43.5417H9H7.5L7.5 51.4583H9ZM9 35.625H10.5L10.5 27.7083H9H7.5L7.5 35.625H9ZM9 19.7917H10.5L10.5 11.875H9H7.5L7.5 19.7917H9ZM9 3.95831H10.5V0H9H7.5L7.5 3.95831H9Z"
@@ -215,6 +218,8 @@ function RoadMap() {
         </motion.div>
       </div>
     </div>
+    </div>
+    </>
   );
 }
 
