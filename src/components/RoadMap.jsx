@@ -34,7 +34,7 @@ function RoadMap() {
         viewBox="0 0 90 148"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 right-0"
+        className="absolute md:top-0 md:right-0 top-10 right-0 w-20"
       >
         <path
           fill-rule="evenodd"

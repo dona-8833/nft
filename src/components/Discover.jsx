@@ -10,7 +10,7 @@ function Discover() {
 
   return (
     <>
-      <div className="mt-8 relative overflow-hidden">
+      <div className="mt-8 relative overflow-hidden" id="explore" >
         <div className="absolute -top-0 left-1/2 -translate-x-1/2 z-10 flex justify-center">
           <div className="w-100 h-40 bg-secondary/10 blur-3xl rounded-full"></div>
         </div>

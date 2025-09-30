@@ -18,13 +18,13 @@ function Nav() {
           <a href="#" className="hover:text-primary text-md font-medium">
             Home
           </a>
-          <a href="#features" className="hover:text-primary text-md font-medium">
+          <a href="#explore" className="hover:text-primary text-md font-medium">
             Explore
           </a>
           <a href="#about" className="hover:text-primary text-md font-medium">
             About
           </a>
-          <a href="#roadmap" className="hover:text-primary text-md font-medium">
+          <a href="#How" className="hover:text-primary text-md font-medium">
             How it works
           </a>
         </div>
@@ -46,13 +46,13 @@ function Nav() {
           <a href="#" className="hover:text-primary text-md font-medium">
             Home
           </a>
-          <a href="#features" className="hover:text-primary text-md font-medium">
+          <a href="#explore" className="hover:text-primary text-md font-medium">
             Explore
           </a>
           <a href="#about" className="hover:text-primary text-md font-medium">
             About
           </a>
-          <a href="#roadmap" className="hover:text-primary text-md font-medium">
+          <a href="#How" className="hover:text-primary text-md font-medium">
             How it works
           </a>
           
