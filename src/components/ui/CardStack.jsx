@@ -72,7 +72,7 @@ function CardCarousel() {
                       mt-1 text-sm px-3 py-1 rounded-full font-medium mb-2 animate-pulse
                       ${
                         card.status === "Live"
-                          ? "border border-green-400 text-green-300"
+                          ? "border border-white text-white"
                           : card.status === "Launching Soon"
                           ? "bg-primary/70 text-white"
                           : "border-red-400 text-red-300 border-2 border-dotted"
