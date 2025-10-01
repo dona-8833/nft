@@ -35,7 +35,7 @@ function CardCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActive((prev) => (prev + 1) % cards.length); // loops infinitely
-    }, 3000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);
