@@ -29,18 +29,44 @@ const cards = [
 
 function CardCarousel() {
   const [active, setActive] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
 
   // auto-slide every 3s
   useEffect(() => {
     const interval = setInterval(() => {
       setActive((prev) => (prev + 1) % cards.length); // loops infinitely
-    }, 2500);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
+  // handle swipe start
+  const handleTouchStart = (e) => {
+    setTouchStart(e.touches[0].clientX);
+  };
+
+  // handle swipe end
+  const handleTouchEnd = (e) => {
+    if (!touchStart) return;
+    const touchEnd = e.changedTouches[0].clientX;
+    const distance = touchStart - touchEnd;
+
+    if (distance > 50) {
+      // swipe left → next card
+      setActive((prev) => (prev + 1) % cards.length);
+    } else if (distance < -50) {
+      // swipe right → prev card
+      setActive((prev) => (prev - 1 + cards.length) % cards.length);
+    }
+    setTouchStart(null);
+  };
+
   return (
-    <div className="flex items-center justify-center h-160 overflow-hidden">
+    <div
+      className="flex items-center justify-center h-160 overflow-hidden"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
       <div className="relative flex items-center justify-center w-full max-w-5xl">
         {cards.map((card, index) => {
           const isActive = index === active;
@@ -52,7 +78,11 @@ function CardCarousel() {
               key={card.id}
               className={`
                 cursor-pointer absolute top-1/2 transition-all duration-700 ease-in-out
-                ${isActive ? "z-20 scale-105 -translate-y-2/3 animate-fadeInUp" : "z-10 scale-90 -translate-y-1/3 opacity-70"}
+                ${
+                  isActive
+                    ? "z-20 scale-105 -translate-y-2/3 animate-fadeInUp"
+                    : "z-10 scale-90 -translate-y-1/3 opacity-70"
+                }
                 ${isLeft ? "md:-translate-x-75 -translate-x-40 -skew-y-[20deg]" : ""}
                 ${isRight ? "md:translate-x-75 translate-x-40 skew-y-[20deg]" : ""}
                 ${isActive ? "translate-x-0 rotate-0 skew-x-0" : ""}
