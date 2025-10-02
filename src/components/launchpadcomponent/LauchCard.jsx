@@ -35,7 +35,7 @@ function LaunchCard() {
             </div>
 
             {/* NFT Preview */}
-            <div className="w-full relative rounded-xl overflow-hidden border border-white/10">
+            <div className="w-full relative rounded-xl  overflow-hidden border border-white/10">
               <img
                 src={nft.nftImage}
                 alt={nft.collectionName}
@@ -46,7 +46,7 @@ function LaunchCard() {
             {/* NFT Details */}
             <div className="flex justify-between gap-6 w-full items-center">
               <div className="text-white flex flex-col w-full">
-                <p className="font-medium text-[12px] truncate">
+                <p className="font-medium text-md truncate">
                   {nft.collectionName}
                 </p>
                 <div className="flex justify-between text-[10px] opacity-70 mt-2">

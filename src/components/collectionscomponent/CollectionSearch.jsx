@@ -18,17 +18,17 @@ function CollectionSearch() {
       <label className="relative overflow-hidden z-10 block w-full md:w-3xl rounded-2xl border border-primary">
         <input
           type="text"
-          placeholder="Search for Collections, Creator, Wallet and more..."
+          placeholder="Search for Collections..."
           className="w-full md:p-4 p-3 pr-14 text-white bg-transparent focus:ring-0 focus:outline-none"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <button
-          type="button"
-          className="absolute -right-5 rounded-full top-1/2 -translate-y-1/2 bg-secondary py-5 px-6"
-        >
-          <FaSearch className="text-2xl" />
-        </button>
+          <button
+            type="button"
+            className="absolute  -right-3 rounded-full top-1/2 -translate-y-1/2 bg-[#068C5A] py-5 pr-5 pl-5"
+          >
+            <FaSearch className="text-2xl" />
+          </button>
       </label>
 
       {/* Filter Tabs */}

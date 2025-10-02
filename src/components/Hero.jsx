@@ -9,7 +9,7 @@ function Hero() {
     <div data-theme="NFT" className="mt-8 relative z-0">
       {/* Small subtitle */}
       <motion.p
-        className="text-gray-200 font-extralight text-[10px] text-center"
+        className="text-gray-200  font-extralight text-[10px] text-center"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -24,14 +24,14 @@ function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
-        <motion.p
-          className="text-4xl font-bold"
+        <motion.h1
+          className="text-4xl font-bold "
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           Mint with
-        </motion.p>
+        </motion.h1>
 
         <motion.div
           className="overflow-hidden w-fit rounded-full object-contain bg-gray-100"
@@ -42,17 +42,17 @@ function Hero() {
           <img src="/hero.png" className="hidden md:block" alt="" />
         </motion.div>
 
-        <motion.p
+        <motion.h1
           className="text-4xl font-bold"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         >
           Knowledge,
-        </motion.p>
+        </motion.h1>
       </motion.div>
 
-      <motion.p
+      <motion.h1
         className="text-4xl md:mt-3 font-bold text-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ function Hero() {
         <span className="text-4xl text-secondary font-bold">
           Smarter
         </span>
-      </motion.p>
+      </motion.h1>
 
       {/* NFT Card */}
       <motion.div

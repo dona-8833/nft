@@ -28,7 +28,7 @@ function NftCard() {
               className="object-cover h-full w-full"
             />
           </div>
-          <div className="text-white">
+          <div className="text-white/50">
             <p className="font-medium text-[12px]">Zappier Tariq</p>
             <p className="font-extralight text-[10px] opacity-70">Creator</p>
           </div>
@@ -48,7 +48,7 @@ function NftCard() {
 
         {/* Meta Info */}
         <div className="flex justify-between gap-10 items-center">
-          <div className="text-white  flex flex-col w-full">
+          <div className="text-white/50  flex flex-col w-full">
             <p className="font-medium text-[12px]">!1914 0G Collection</p>
             <p className="font-medium text-[12px] opacity-70">#3454</p>
           </div>
@@ -71,7 +71,7 @@ function NftCard() {
               className="object-cover h-full w-full "
             />
           </div>
-          <div className="text-white">
+          <div className="text-white/50">
             <p className="font-medium text-[12px]">Zappier Tariq</p>
             <p className="font-extralight text-[10px] opacity-70">Creator</p>
           </div>
@@ -89,7 +89,7 @@ function NftCard() {
         </div>
 
         <div className="flex justify-between gap-10 items-center">
-          <div className="text-white  flex flex-col w-full">
+          <div className="text-white/50  flex flex-col w-full">
             <p className="font-medium text-[12px]">!1914 0G Collection</p>
             <p className="font-medium text-[12px] opacity-70">#3454</p>
           </div>
@@ -112,7 +112,7 @@ function NftCard() {
               className="object-cover h-full w-full"
             />
           </div>
-          <div className="text-white">
+          <div className="text-white/50">
             <p className="font-medium text-[12px]">Zappier Tariq</p>
             <p className="font-extralight text-[10px] opacity-70">Creator</p>
           </div>
@@ -129,7 +129,7 @@ function NftCard() {
           </div>
         </div>
         <div className="flex justify-between gap-10 items-center">
-          <div className="text-white  flex flex-col w-full">
+          <div className="text-white/50  flex flex-col w-full">
             <p className="font-medium text-[12px]">!1914 0G Collection</p>
             <p className="font-medium text-[12px] opacity-70">#3454</p>
           </div>

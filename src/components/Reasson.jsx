@@ -18,7 +18,7 @@ function Reasson() {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeUp}
         >
-          <h1 className="text-3xl md:text-4xl   text-center md:text-left font-black">
+          <h1 className="text-3xl md:text-3xl   text-center md:text-left font-black">
             <svg
               width="162"
               height="22"
@@ -43,7 +43,7 @@ function Reasson() {
 
         {/* Image Section */}
         <motion.div
-          className="h-[500px] w-full md:w-[800px] overflow-hidden md:rounded-4xl rounded-none pb-10 flex items-center justify-center"
+          className="h-[500px] w- md:w-[800px] overflow-hidden md:rounded-3xl rounded-none mb-10 flex items-center justify-center"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.8 } }}
           viewport={{ once: true, amount: 0.3 }}
@@ -81,9 +81,9 @@ function Reasson() {
           transition={{ delay: 0 }}
         >
           {/* SVG stays the same */}
-          <h1 className="text-2xl md:text-3xl font-extrabold text-secondary mb-4">
+          <p className="text-2xl md:text-2xl font-extrabold text-secondary mb-4">
             Learn to Own
-          </h1>
+          </p>
           <p className="text-sm text-gray-300 leading-relaxed">
             Mintellect makes NFT ownership <br /> educational with gamified
             learning <br /> and quizzes tied to real rewards.
@@ -99,9 +99,9 @@ function Reasson() {
           variants={fadeUp}
           transition={{ delay: 0.2 }}
         >
-          <h1 className="text-2xl md:text-3xl font-extrabold text-secondary mb-4">
+          <p className="text-2xl md:text-2xl font-extrabold text-secondary mb-4">
             Knowledge-Backed NFTs
-          </h1>
+          </p>
           <p className="text-sm text-gray-300 leading-relaxed">
             Get access to limited-edition <br /> collections designed to combine
             art, <br /> knowledge, and utility.
@@ -117,9 +117,9 @@ function Reasson() {
           variants={fadeUp}
           transition={{ delay: 0.4 }}
         >
-          <h1 className="text-2xl md:text-3xl font-extrabold text-secondary mb-4">
+          <p className="text-2xl md:text-2xl font-extrabold text-secondary mb-4">
             Community-Powered Growth
-          </h1>
+          </p>
           <p className="text-sm text-gray-300 leading-relaxed">
             Join a growing ecosystem of creators, <br /> learners, and
             collectors shaping the <br /> next wave of digital ownership.

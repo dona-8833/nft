@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poller+One&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -45,3 +46,13 @@
   --depth: 1;
   --noise: 0;
 };
+@theme {
+  --font-lexend: 'Lexend', sans-serif;
+  --font-poller: 'Poller One', sans-serif;
+}
+body {
+  font-family: var(--font-lexend);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poller);
+}

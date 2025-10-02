@@ -10,7 +10,8 @@ function AvailableCollections() {
         </h2>
 
         <div className="overflow-x-auto w-full">
-          <table className="border-collapse hidden md:block w-full text-white min-w-[600px]">
+        <div className="hidden md:block overflow-x-auto w-full">
+          <table className="border-collapse w-full text-white min-w-[600px]">
             <thead>
               <tr className="border-b border-gray-700 text-left text-gray-400">
                 <th className="p-3 sticky left-0 bg-base-100 z-10">
@@ -42,7 +43,6 @@ function AvailableCollections() {
                     key={i}
                     className="border-b border-gray-800 hover:bg-gray-900"
                   >
-                    {/* Sticky Collection Column */}
                     <td className="flex items-center gap-3 p-6 px-0 md:p-12 sticky left-0 bg-base-100 z-10">
                       <img
                         src={image}
@@ -54,7 +54,6 @@ function AvailableCollections() {
                         <p className="text-sm text-gray-400">{creator}</p>
                       </div>
                     </td>
-
                     <td className="p-3">{floorValue}</td>
                     <td className="p-3 text-green-400">{percentChange}</td>
                     <td className="p-3">
@@ -70,6 +69,7 @@ function AvailableCollections() {
               )}
             </tbody>
           </table>
+        </div>
                   <div className="grid grid-cols-2 gap-4 md:hidden">
           {" "}
           {collectionsData.map(

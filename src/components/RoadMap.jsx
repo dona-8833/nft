@@ -37,7 +37,7 @@ function RoadMap() {
         viewBox="0 0 90 148"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute md:top-0 md:right-0 top-10 right-0 w-20"
+        className="absolute md:top-0 md:right-0 top-10 right-0 w-20 animate-bounce"
       >
         <path
           fill-rule="evenodd"
@@ -65,7 +65,7 @@ function RoadMap() {
               <img src="/gear.png" className="w-15 h-15" alt="" />
             </div>
             <p className="text-secondary font-medium">phase 1</p>
-            <h4 className="text-2xl font-bold">Testnet Launch</h4>
+            <p className="text-2xl font-bold">Testnet Launch</p>
             <p className="text-sm text-gray-300/60 text-center">
               Deploy Mintellect on EduChain testnet, <br /> allow users to
               explore, learn, and mint <br /> demo NFTs.
@@ -111,7 +111,7 @@ function RoadMap() {
               <img src="/rocket.png " className="w-15 h-15" alt="" />
             </div>
             <p className="text-secondary font-medium">phase 2</p>
-            <h4 className="text-2xl font-bold">Mainnet Launch</h4>
+            <p className="text-2xl font-bold">Mainnet Launch</p>
             <p className="text-sm text-gray-300/60 text-center">
               Official Mintellect launch on EduChain <br /> mainnet with core
               features: Browse, Learn, <br /> Quiz, Mint.
@@ -125,11 +125,12 @@ function RoadMap() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <img
-            src="/bunny.png"
-            className="md:absolute hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:block"
-            alt=""
-          />
+<img
+  src="/bunny.png"
+  alt="Bouncing Bunny"
+  className="md:absolute hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:block animate-bounce"
+/>
+
           <svg
             width="18"
             height="199"
@@ -163,7 +164,7 @@ function RoadMap() {
               <img src="/growth.png" className="w-15 h-15" alt="" />
             </div>
             <p className="text-secondary font-medium">phase 4</p>
-            <h4 className="text-2xl font-bold">Edu Growth & Rewards</h4>
+            <p className="text-2xl font-bold">Edu Growth & Rewards</p>
             <p className="text-sm text-gray-300/60 text-center">
               Partnerships, learning challenges, and <br /> reward programs for
               active edu-chain <br /> collectors.
@@ -209,7 +210,7 @@ function RoadMap() {
               <img src="/more.png" className="w-15 h-15" alt="" />
             </div>
             <p className="text-secondary font-medium">phase 3</p>
-            <h4 className="text-2xl font-bold">Marketplace & more</h4>
+            <p className="text-2xl font-bold">Marketplace & more</p>
             <p className="text-sm text-gray-300/60 text-center">
               Enable NFT trading and tools for creators <br /> to launch their
               own Learn-to-Mint <br /> collections.

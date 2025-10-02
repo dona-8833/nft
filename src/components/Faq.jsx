@@ -25,27 +25,27 @@ function Faq() {
 
       <div className="mt-5 md:mx-30 flex flex-col gap-3">
         <div className="flex  justify-between items-center p-4 border border-gray-200/30 rounded-3xl">
-          <h1 className="font-medium">What is Mintellect ?</h1>
+          <p className="font-medium">What is Mintellect ?</p>
           <MdKeyboardArrowDown />
         </div>
         <div className="flex  justify-between items-center p-4 border border-gray-200/30 rounded-3xl">
-          <h1 className="font-medium">
+          <p className="font-medium">
             How does the Learn-to-Mint process work?{" "}
-          </h1>
+          </p>
           <MdKeyboardArrowDown />
         </div>
         <div className="flex  justify-between items-center p-4 border border-gray-200/30 rounded-3xl">
-          <h1 className="font-medium">Do I need crypto to use Mintellect? </h1>
+          <p className="font-medium">Do I need crypto to use Mintellect? </p>
           <MdKeyboardArrowDown />
         </div>
         <div className="flex  justify-between items-center p-4 border border-gray-200/30 rounded-3xl">
-          <h1 className="font-medium">
+          <p className="font-medium">
             Why should I use Mintellect instead of other NFT marketplaces?
-          </h1>
+          </p>
           <MdKeyboardArrowDown />
         </div>
         <div className="flex mb-20  justify-between items-center p-4 border border-gray-200/30 rounded-3xl">
-          <h1 className="font-medium">What is Mintellect ?</h1>
+          <p className="font-medium">What is Mintellect ?</p>
           <MdKeyboardArrowDown />
         </div>
       </div>

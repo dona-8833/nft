@@ -52,7 +52,7 @@ function Features() {
         >
           {/* Bunny Image */}
           <motion.div
-            className="absolute top-9 right-5 md:right-57 w-15 h-15 md:w-20 md:h-20 overflow-hidden z-10"
+            className="absolute top-9 right-5 md:right-57 w-15 h-15 md:w-20 md:h-20 overflow-hidden z-10 animate-bounce"
             initial={{ opacity: 0, y: -20, rotate: -10 }}
             whileInView={{ opacity: 1, y: 0, rotate: 0 }}
             viewport={{ once: true, amount: 0.5 }}
