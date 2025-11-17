@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import collectionsData from "../NFTMOCK.json";
+import { useNavigate } from "react-router-dom";
 
 function CollectionSearch() {
+  const navigate = useNavigate();
   const [query, setQuery] = useState("");
 
   // filter logic: check name, creator, or even wallet string
@@ -83,6 +85,7 @@ function CollectionSearch() {
                 ) => (
                   <tr
                     key={i}
+                    onClick={() => navigate('/collectionDetails')}
                     className="border-b border-gray-800 hover:bg-gray-900"
                   >
                     <td className="flex items-center gap-3 p-6 px-0 md:p-12 sticky left-0 bg-base-100 z-10">

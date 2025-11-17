@@ -60,9 +60,9 @@ function CardCarousel() {
   };
 
   // Handle dot click
-  const handleDotClick = (index) => {
-    setActive(index);
-  };
+  // const handleDotClick = (index) => {
+  //   setActive(index);
+  // };
 
   // Handle keyboard navigation
   useEffect(() => {

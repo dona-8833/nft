@@ -1,15 +1,16 @@
-import React from 'react'
+import React from "react";
 import collectionsData from "../NFTMOCK.json";
-
+import { useNavigate } from "react-router-dom";
 
 function AvailableCollections() {
+  const navigate = useNavigate();
   return (
-      <div className="w-full pt-10">
-        <h2 className="text-xl font-bold mb-4 text-white">
-          Available Collection
-        </h2>
+    <div className="w-full pt-10">
+      <h2 className="text-xl font-bold mb-4 text-white">
+        Available Collection
+      </h2>
 
-        <div className="overflow-x-auto w-full">
+      <div className="overflow-x-auto w-full">
         <div className="hidden md:block overflow-x-auto w-full">
           <table className="border-collapse w-full text-white min-w-[600px]">
             <thead>
@@ -41,6 +42,7 @@ function AvailableCollections() {
                 ) => (
                   <tr
                     key={i}
+                    onClick={() => navigate("/collectionDetails")}
                     className="border-b border-gray-800 hover:bg-gray-900"
                   >
                     <td className="flex items-center gap-3 p-6 px-0 md:p-12 sticky left-0 bg-base-100 z-10">
@@ -70,7 +72,7 @@ function AvailableCollections() {
             </tbody>
           </table>
         </div>
-                  <div className="grid grid-cols-2 gap-4 md:hidden">
+        <div className="grid grid-cols-2 gap-4 md:hidden">
           {" "}
           {collectionsData.map(
             ({ name, creator, floorValue, volume, image }, i) => (
@@ -118,10 +120,9 @@ function AvailableCollections() {
             )
           )}{" "}
         </div>
-
-
-        </div>
-      </div>  )
+      </div>
+    </div>
+  );
 }
 
-export default AvailableCollections
+export default AvailableCollections;

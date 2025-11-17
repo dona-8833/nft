@@ -1,7 +1,9 @@
 import React from "react";
 import NftData from "../Launch.json"; // JSON file you created
+import { useNavigate } from "react-router-dom";
 
 function LaunchCard() {
+  const navigate = useNavigate();
   return (
     <div className="space-y-6">
       <div>
@@ -15,6 +17,7 @@ function LaunchCard() {
         {NftData.map((nft, index) => (
           <div
             key={index}
+            onClick={() => navigate("/collectionDetails")}
             className="transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_#20f7a7]/40 flex flex-col gap-3 items-center p-3 md:p-4 rounded-xl bg-base-100/60 backdrop-blur-xl border border-primary/30 relative z-10"
           >
             {/* Creator Info */}

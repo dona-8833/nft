@@ -11,7 +11,7 @@ function Nav() {
 
     <div
       className="flex relative justify-between p-4 "
-      data-theme="skibidinova"
+      data-theme="Nft"
       >
       <div>
         <img src="/nav.png" className="h-[42px]" />
