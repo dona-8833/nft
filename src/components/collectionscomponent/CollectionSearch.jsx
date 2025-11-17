@@ -25,12 +25,12 @@ function CollectionSearch() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-          <button
-            type="button"
-            className="absolute  -right-3 rounded-full top-1/2 -translate-y-1/2 bg-[#068C5A] py-5 pr-5 pl-5"
-          >
-            <FaSearch className="text-2xl" />
-          </button>
+        <button
+          type="button"
+          className="absolute  -right-3 rounded-full top-1/2 -translate-y-1/2 bg-[#068C5A] py-5 pr-5 pl-5"
+        >
+          <FaSearch className="text-2xl" />
+        </button>
       </label>
 
       {/* Filter Tabs */}
@@ -85,7 +85,7 @@ function CollectionSearch() {
                 ) => (
                   <tr
                     key={i}
-                    onClick={() => navigate('/collectionDetails')}
+                    onClick={() => navigate("/collectionDetails")}
                     className="border-b border-gray-800 hover:bg-gray-900"
                   >
                     <td className="flex items-center gap-3 p-6 px-0 md:p-12 sticky left-0 bg-base-100 z-10">
@@ -123,6 +123,7 @@ function CollectionSearch() {
             ({ name, creator, floorValue, volume, image }, i) => (
               <div
                 key={i}
+                onClick={() => navigate("/collectionDetails")}
                 className=" flex flex-col gap-3 items-center overflow-hidden rounded-xl bg-base-100/60 backdrop-blur-xl border border-primary/30 relative z-10"
               >
                 {" "}

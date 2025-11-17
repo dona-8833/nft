@@ -78,6 +78,7 @@ function AvailableCollections() {
             ({ name, creator, floorValue, volume, image }, i) => (
               <div
                 key={i}
+                onClick={() => navigate("/collectionDetails")}
                 className=" flex flex-col gap-3 items-center overflow-hidden rounded-xl bg-base-100/60 backdrop-blur-xl border border-primary/30 relative z-10"
               >
                 {" "}
